@@ -1,8 +1,13 @@
 package com.jtmnetwork.exchange;
 
+import com.google.inject.Injector;
 import com.jtm.framework.Framework;
 
+import java.util.Arrays;
+
 public class GlobalExchange extends Framework {
+
+    private Injector sub;
 
     public GlobalExchange() {
         super(false, false, false);
@@ -10,7 +15,7 @@ public class GlobalExchange extends Framework {
 
     @Override
     public void setup() {
-
+        sub = injector(Arrays.asList());
     }
 
     @Override
