@@ -1,0 +1,7 @@
+name: GlobalExchange
+version: 0.1
+api-version: 1.13
+main: com.jtmnetwork.exchange.GlobalExchange
+softdepend:
+  - Vault
+  - JTMEconomy
